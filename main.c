@@ -159,7 +159,7 @@ int main(int argc, char* argv[]){
 				//process user input
                 int n = read(fileno(stdin), buffer, sizeof(buffer));
 				if(n>0){
-				
+
 				}
             }else if(FD_ISSET(sp_fd, &readfds)){
 				//process serial port
@@ -190,7 +190,6 @@ int main(int argc, char* argv[]){
                             close(client_socket[i]);
                             client_socket[i] = 0;
                         }
-
                     }
                 }
             }
